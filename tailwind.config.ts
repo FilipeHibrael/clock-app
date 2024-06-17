@@ -14,6 +14,9 @@ const config: Config = {
         'color-ligh-grey': '#999999',
         'color-white': '#F5F5F5',
       },
+      backgroundImage: {
+        'custom-background-day': "url('/background-day.jpg')",
+      },
     },
   },
   plugins: [],
