@@ -2,7 +2,7 @@
 
 import { QUOTE_GET } from '@/functions/api/api-quote';
 
-type Quote = {
+export type TypeQuote = {
   content: string;
   author: string;
 };
@@ -13,7 +13,7 @@ export default async function quoteGet() {
   try {
     const response = await fetch(url, { cache: 'no-store' });
     if (!response.ok) throw new Error('Error fetching');
-    const data = (await response.json()) as Quote;
+    const data = (await response.json()) as TypeQuote;
     return { data, ok: true, error: '' };
   } catch (error) {
     if (error instanceof Error)
