@@ -4,10 +4,11 @@
 
 @layer base {
   body {
-    @apply bg-custom-background-day bg-cover bg-center bg-no-repeat  h-screen w-screen;
+    @apply bg-custom-background-day bg-cover bg-center bg-no-repeat bg-fixed 
+    h-screen w-screen overflow-hidden;
   }
 
   main {
-    @apply h-screen
+    @apply h-screen;
   }
 }

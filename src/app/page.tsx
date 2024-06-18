@@ -6,7 +6,7 @@ export default async function Home() {
   const initialQuote = await quoteGet();
 
   return (
-    <main className="flex content-between flex-wrap">
+    <main className="grid grid-rows-2">
       <Quote initialQuote={initialQuote} />
       <CurrentTime />
     </main>
