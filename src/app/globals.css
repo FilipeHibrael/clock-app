@@ -3,13 +3,11 @@
 @tailwind utilities;
 
 @layer base {
-
   body {
-    @apply bg-black h-screen w-screen;
+    @apply bg-custom-background-day bg-cover bg-center bg-no-repeat  h-screen w-screen;
   }
 
-  main::before {
-    content: '';
-    @apply absolute inset-0 bg-custom-background-day bg-cover bg-center bg-no-repeat opacity-50 -z-10;
+  main {
+    @apply h-screen
   }
 }

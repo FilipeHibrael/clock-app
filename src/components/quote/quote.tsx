@@ -19,10 +19,10 @@ export default function Quote({ initialQuote }: { initialQuote: DataQuote }) {
 
   if (!quote.data) return null;
   return (
-    <section className=" text-color-white text-lg max-w-[1200px] mx-auto pt-12 px-4">
+    <section className=" text-color-white text-lg max-w-[1200px] w-full mx-auto pt-12 px-4">
       <div className="flex gap-8 items-start justify-between max-w-[580px]">
         <blockquote className="max-w-[48ch]">
-          {`"${quote.data.content}"`}
+          {`“${quote.data.content}”`}
           <cite className="block font-bold mt-2">{quote.data.author}</cite>
         </blockquote>
         <span className=" group cursor-pointer p-1" onClick={reloadData}>
